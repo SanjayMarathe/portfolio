@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   keywords: ['Sanjay Marathe', 'Full-Stack Engineer', 'AI', 'Machine Learning', 'UC Irvine', 'Software Engineer'],
   authors: [{ name: 'Sanjay Marathe' }],
   openGraph: {
-    title: 'Sanjay Marathe | Full-Stack Engineer & AI Enthusiast',
+    title: 'Sanjay Marathe',
     description: 'Computer Science & Intelligent Systems student at UC Irvine, passionate about building scalable systems and intelligent agents.',
     type: 'website',
   },
