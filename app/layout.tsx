@@ -7,7 +7,7 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Sanjay Marathe | Full-Stack Engineer & AI Enthusiast',
+  title: 'Sanjay Marathe',
   description: 'Computer Science & Intelligent Systems student at UC Irvine, passionate about building scalable systems and intelligent agents.',
   generator: 'v0.app',
   keywords: ['Sanjay Marathe', 'Full-Stack Engineer', 'AI', 'Machine Learning', 'UC Irvine', 'Software Engineer'],
