@@ -4,6 +4,20 @@ import Link from 'next/link'
 export default function Projects() {
   const projects = [
     {
+      name: 'DermaVisionXR',
+      description: 'Futuristic spatial dermatoscopic analysis platform for VR. Features fullscreen camera scanning, AI-powered diagnosis with Pinecone similarity search, real-time confidence visualization, and comprehensive medical recommendations in an immersive purple-themed interface.',
+      tech: ['TypeScript', 'Pinecone', 'WebXR', 'Three.js', 'AI/ML'],
+      link: null,
+      github: 'https://github.com/SanjayMarathe/DermaVisionXR'
+    },
+    {
+      name: 'StructuraXR',
+      description: 'Immersive WebXR application for designing and testing engineering structures in VR. Features AI-powered structure generation via Claude, CAD model uploads (GLTF/GLB/STL/OBJ), real-time stress visualization, hand tracking, and expert AI structural analysis.',
+      tech: ['Three.js', 'WebXR', 'TypeScript', 'Claude AI', 'Meta Quest'],
+      link: null,
+      github: 'https://github.com/SanjayMarathe/StructuraXR'
+    },
+    {
       name: 'Calyra',
       description: 'AI-powered productivity and scheduling platform that automates workflows across calendars, CRM, and communication tools. Prioritizes tasks, supports wellness-aware planning, and integrates seamlessly for individuals and teams.',
       tech: ['LangChain', 'Next.js', 'FastAPI'],
