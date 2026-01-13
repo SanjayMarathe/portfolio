@@ -4,6 +4,20 @@ import Link from 'next/link'
 export default function Projects() {
   const projects = [
     {
+      name: 'ShieldNet',
+      description: 'AI-powered fraud detection network for payments. Multi-agent invoice verification system that analyzes invoices before USDC transactions, detects fraud patterns, and shares threat intelligence across the network. Features real-time fraud scoring, treasury protection, and reward mechanisms for threat detection.',
+      tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Python'],
+      link: null,
+      github: 'https://github.com/Steve-Dusty/ShieldNet'
+    },
+    {
+      name: 'HealthXR (StanfordXR)',
+      description: 'Extended reality healthcare application built for Apple Vision Pro using WebSpatial. Features AI-powered health analysis with Google Gemini, immersive 3D health visualizations, spatial UI components, and comprehensive health metrics tracking in a fully immersive XR environment.',
+      tech: ['React', 'TypeScript', 'WebSpatial', 'Apple Vision Pro', 'Gemini AI'],
+      link: 'https://healthxr.vercel.app',
+      github: 'https://github.com/Steve-Dusty/healthxr'
+    },
+    {
       name: 'DermaVisionXR',
       description: 'Futuristic spatial dermatoscopic analysis platform for VR. Features fullscreen camera scanning, AI-powered diagnosis with Pinecone similarity search, real-time confidence visualization, and comprehensive medical recommendations in an immersive purple-themed interface.',
       tech: ['TypeScript', 'Pinecone', 'WebXR', 'Three.js', 'AI/ML'],
@@ -16,6 +30,20 @@ export default function Projects() {
       tech: ['Three.js', 'WebXR', 'TypeScript', 'Claude AI', 'Meta Quest'],
       link: null,
       github: 'https://github.com/SanjayMarathe/StructuraXR'
+    },
+    {
+      name: 'Nomad',
+      description: 'Travel companion platform designed to help travelers discover, plan, and book accommodations and unique experiences. Streamlines the travel planning process with intelligent recommendations and seamless booking integration.',
+      tech: ['React', 'TypeScript', 'Node.js'],
+      link: null,
+      github: 'https://github.com/SanjayMarathe/nomad'
+    },
+    {
+      name: 'OneApp',
+      description: 'Unified daily productivity platform built at CalHacks 12.0. Consolidates multiple daily tasks and workflows into a single streamlined application, reducing context-switching and improving efficiency.',
+      tech: ['React', 'TypeScript', 'Vercel'],
+      link: 'https://one-app-frontend.vercel.app',
+      github: 'https://devpost.com/software/oneapp-oawqzl'
     },
     {
       name: 'Calyra',
