@@ -10,7 +10,7 @@ export default function Hero() {
             <p className="text-neutral-500 text-sm tracking-widest uppercase animate-fade-in-up">
               Software Engineer
             </p>
-            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold text-white tracking-tight leading-[0.9] animate-fade-in-up-delay-1">
+            <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold text-[#7C3AED] tracking-tight leading-[0.9] animate-fade-in-up-delay-1">
               Sanjay
               <br />
               Marathe
@@ -27,7 +27,7 @@ export default function Hero() {
               href="https://github.com/SanjayMarathe"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-neutral-400 hover:text-white transition-colors text-sm tracking-wide uppercase underline underline-offset-4 decoration-neutral-700 hover:decoration-white"
+              className="text-neutral-400 hover:text-[#7C3AED] transition-colors text-sm tracking-wide uppercase underline underline-offset-4 decoration-neutral-700 hover:decoration-[#7C3AED]"
             >
               GitHub
             </Link>
@@ -35,13 +35,13 @@ export default function Hero() {
               href="https://www.linkedin.com/in/sanjay-marathe-2257811b0/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-neutral-400 hover:text-white transition-colors text-sm tracking-wide uppercase underline underline-offset-4 decoration-neutral-700 hover:decoration-white"
+              className="text-neutral-400 hover:text-[#7C3AED] transition-colors text-sm tracking-wide uppercase underline underline-offset-4 decoration-neutral-700 hover:decoration-[#7C3AED]"
             >
               LinkedIn
             </Link>
             <a
               href="mailto:maraths1@uci.edu"
-              className="text-neutral-400 hover:text-white transition-colors text-sm tracking-wide uppercase underline underline-offset-4 decoration-neutral-700 hover:decoration-white"
+              className="text-neutral-400 hover:text-[#7C3AED] transition-colors text-sm tracking-wide uppercase underline underline-offset-4 decoration-neutral-700 hover:decoration-[#7C3AED]"
             >
               Email
             </a>
@@ -49,7 +49,7 @@ export default function Hero() {
         </div>
 
         <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-fade-in-up-delay-4">
-          <Link href="#about" className="text-neutral-600 hover:text-white transition-colors">
+          <Link href="#about" className="text-neutral-600 hover:text-[#7C3AED] transition-colors">
             <ArrowDown className="w-5 h-5 animate-bounce" />
           </Link>
         </div>
