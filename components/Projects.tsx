@@ -99,7 +99,7 @@ export default function Projects() {
   return (
     <section id="projects" className="py-32 px-6 lg:px-8 bg-white dark:bg-black border-t border-neutral-200 dark:border-neutral-900 transition-colors">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-sm tracking-widest uppercase text-neutral-400 dark:text-neutral-500 mb-16">
+        <h2 className="text-sm tracking-widest uppercase text-neutral-600 dark:text-neutral-500 mb-16">
           Projects
         </h2>
         <div className="space-y-0">
@@ -117,7 +117,7 @@ export default function Projects() {
                     {project.tech.map((tech, techIdx) => (
                       <span
                         key={techIdx}
-                        className="text-xs text-neutral-400 dark:text-neutral-600 uppercase tracking-wider"
+                        className="text-xs text-neutral-500 dark:text-neutral-600 uppercase tracking-wider"
                       >
                         {tech}{techIdx < project.tech.length - 1 ? ' /' : ''}
                       </span>
@@ -125,7 +125,7 @@ export default function Projects() {
                   </div>
                 </div>
                 <div className="md:col-span-6">
-                  <p className="text-neutral-500 dark:text-neutral-400 text-sm leading-relaxed">
+                  <p className="text-neutral-800 dark:text-neutral-400 text-sm leading-relaxed">
                     {project.description}
                   </p>
                 </div>
@@ -135,7 +135,7 @@ export default function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-neutral-400 dark:text-neutral-600 hover:text-[#7C3AED] transition-colors text-xs uppercase tracking-wider underline underline-offset-4"
+                      className="text-neutral-700 dark:text-neutral-600 hover:text-[#7C3AED] transition-colors text-xs uppercase tracking-wider underline underline-offset-4"
                     >
                       Code
                     </Link>
@@ -145,7 +145,7 @@ export default function Projects() {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-neutral-400 dark:text-neutral-600 hover:text-[#7C3AED] transition-colors flex items-center gap-1"
+                      className="text-neutral-700 dark:text-neutral-600 hover:text-[#7C3AED] transition-colors flex items-center gap-1"
                     >
                       <ArrowUpRight className="w-4 h-4" />
                     </Link>
