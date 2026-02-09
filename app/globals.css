@@ -43,8 +43,8 @@
     -moz-osx-font-smoothing: grayscale;
   }
   ::selection {
-    background: #ffffff;
-    color: #000000;
+    background: #7C3AED;
+    color: #ffffff;
   }
 }
 

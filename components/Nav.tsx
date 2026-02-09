@@ -24,7 +24,7 @@ export default function Nav() {
           <a
             href="/resume.pdf"
             download
-            className="text-sm tracking-wide uppercase border border-white text-white px-4 py-2 hover:bg-white hover:text-black transition-all"
+            className="text-sm tracking-wide uppercase border border-[#7C3AED] text-[#7C3AED] px-4 py-2 hover:bg-[#7C3AED] hover:text-black transition-all"
           >
             Resume
           </a>
@@ -56,7 +56,7 @@ export default function Nav() {
             <a
               href="/resume.pdf"
               download
-              className="text-sm tracking-wide uppercase border border-white text-white px-4 py-2 hover:bg-white hover:text-black transition-all w-fit"
+              className="text-sm tracking-wide uppercase border border-[#7C3AED] text-[#7C3AED] px-4 py-2 hover:bg-[#7C3AED] hover:text-black transition-all w-fit"
             >
               Resume
             </a>

@@ -40,7 +40,7 @@ export default function WebBackground() {
     const ctx = circleCanvas.getContext('2d')!
     ctx.beginPath()
     ctx.arc(32, 32, 30, 0, Math.PI * 2)
-    ctx.fillStyle = '#ffffff'
+    ctx.fillStyle = '#7C3AED'
     ctx.fill()
     const circleTexture = new THREE.CanvasTexture(circleCanvas)
 
@@ -55,12 +55,12 @@ export default function WebBackground() {
     dotGeometry.setAttribute('position', new THREE.BufferAttribute(dotPositions, 3))
 
     const dotMaterial = new THREE.PointsMaterial({
-      color: 0xffffff,
+      color: 0x7C3AED,
       size: 1.5,
       map: circleTexture,
       alphaMap: circleTexture,
       transparent: true,
-      opacity: 0.3,
+      opacity: 0.7,
       sizeAttenuation: true,
       depthWrite: false,
     })
@@ -69,9 +69,9 @@ export default function WebBackground() {
 
     // Create lines connecting nearby points
     const linesMaterial = new THREE.LineBasicMaterial({
-      color: 0xffffff,
+      color: 0x7C3AED,
       transparent: true,
-      opacity: 0.1,
+      opacity: 0.25,
     })
 
     const connectionDistance = 25

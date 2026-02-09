@@ -17,7 +17,7 @@ export default function Footer() {
             <div className="space-y-4">
               <a
                 href="mailto:maraths1@uci.edu"
-                className="block text-white hover:text-neutral-400 transition-colors text-2xl sm:text-3xl font-light tracking-tight"
+                className="block text-[#7C3AED] hover:text-[#7C3AED]/70 transition-colors text-2xl sm:text-3xl font-light tracking-tight"
               >
                 maraths1@uci.edu
               </a>
@@ -27,7 +27,7 @@ export default function Footer() {
                 href="https://github.com/SanjayMarathe"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-neutral-500 hover:text-white transition-colors text-sm tracking-wide uppercase underline underline-offset-4 decoration-neutral-800 hover:decoration-white"
+                className="text-neutral-500 hover:text-[#7C3AED] transition-colors text-sm tracking-wide uppercase underline underline-offset-4 decoration-neutral-800 hover:decoration-[#7C3AED]"
               >
                 GitHub
               </Link>
@@ -35,13 +35,13 @@ export default function Footer() {
                 href="https://www.linkedin.com/in/sanjay-marathe-2257811b0/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-neutral-500 hover:text-white transition-colors text-sm tracking-wide uppercase underline underline-offset-4 decoration-neutral-800 hover:decoration-white"
+                className="text-neutral-500 hover:text-[#7C3AED] transition-colors text-sm tracking-wide uppercase underline underline-offset-4 decoration-neutral-800 hover:decoration-[#7C3AED]"
               >
                 LinkedIn
               </Link>
               <a
                 href="mailto:maraths1@uci.edu"
-                className="text-neutral-500 hover:text-white transition-colors text-sm tracking-wide uppercase underline underline-offset-4 decoration-neutral-800 hover:decoration-white"
+                className="text-neutral-500 hover:text-[#7C3AED] transition-colors text-sm tracking-wide uppercase underline underline-offset-4 decoration-neutral-800 hover:decoration-[#7C3AED]"
               >
                 Email
               </a>
