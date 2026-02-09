@@ -1,146 +1,153 @@
-import { ExternalLink, Github } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Projects() {
   const projects = [
     {
       name: 'ShieldNet',
-      description: 'AI-powered fraud detection network for payments. Multi-agent invoice verification system that analyzes invoices before USDC transactions, detects fraud patterns, and shares threat intelligence across the network. Features real-time fraud scoring, treasury protection, and reward mechanisms for threat detection.',
-      tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Python'],
+      description: 'AI-powered fraud detection network for payments. Multi-agent invoice verification system that analyzes invoices before USDC transactions, detects fraud patterns, and shares threat intelligence across the network.',
+      tech: ['React', 'TypeScript', 'Python'],
       link: null,
       github: 'https://github.com/Steve-Dusty/ShieldNet'
     },
     {
-      name: 'HealthXR (StanfordXR)',
-      description: 'Extended reality healthcare application built for Apple Vision Pro using WebSpatial. Features AI-powered health analysis with Google Gemini, immersive 3D health visualizations, spatial UI components, and comprehensive health metrics tracking in a fully immersive XR environment.',
-      tech: ['React', 'TypeScript', 'WebSpatial', 'Apple Vision Pro', 'Gemini AI'],
+      name: 'HealthXR',
+      description: 'Extended reality healthcare application built for Apple Vision Pro using WebSpatial. Features AI-powered health analysis with Google Gemini and immersive 3D health visualizations.',
+      tech: ['React', 'TypeScript', 'WebSpatial', 'Gemini AI'],
       link: 'https://healthxr.vercel.app',
       github: 'https://github.com/Steve-Dusty/healthxr'
     },
     {
       name: 'DermaVisionXR',
-      description: 'Futuristic spatial dermatoscopic analysis platform for VR. Features fullscreen camera scanning, AI-powered diagnosis with Pinecone similarity search, real-time confidence visualization, and comprehensive medical recommendations in an immersive purple-themed interface.',
-      tech: ['TypeScript', 'Pinecone', 'WebXR', 'Three.js', 'AI/ML'],
+      description: 'Spatial dermatoscopic analysis platform for VR. Features fullscreen camera scanning, AI-powered diagnosis with Pinecone similarity search, and real-time confidence visualization.',
+      tech: ['TypeScript', 'Pinecone', 'WebXR', 'Three.js'],
       link: null,
       github: 'https://github.com/SanjayMarathe/DermaVisionXR'
     },
     {
       name: 'StructuraXR',
-      description: 'Immersive WebXR application for designing and testing engineering structures in VR. Features AI-powered structure generation via Claude, CAD model uploads (GLTF/GLB/STL/OBJ), real-time stress visualization, hand tracking, and expert AI structural analysis.',
-      tech: ['Three.js', 'WebXR', 'TypeScript', 'Claude AI', 'Meta Quest'],
+      description: 'Immersive WebXR application for designing and testing engineering structures in VR. Features AI-powered structure generation via Claude, CAD model uploads, and real-time stress visualization.',
+      tech: ['Three.js', 'WebXR', 'TypeScript', 'Claude AI'],
       link: null,
       github: 'https://github.com/SanjayMarathe/StructuraXR'
     },
     {
       name: 'Nomad',
-      description: 'Travel companion platform designed to help travelers discover, plan, and book accommodations and unique experiences. Streamlines the travel planning process with intelligent recommendations and seamless booking integration.',
+      description: 'Travel companion platform designed to help travelers discover, plan, and book accommodations and unique experiences with intelligent recommendations.',
       tech: ['React', 'TypeScript', 'Node.js'],
       link: null,
       github: 'https://github.com/SanjayMarathe/nomad'
     },
     {
       name: 'OneApp',
-      description: 'Unified daily productivity platform built at CalHacks 12.0. Consolidates multiple daily tasks and workflows into a single streamlined application, reducing context-switching and improving efficiency.',
+      description: 'Unified daily productivity platform built at CalHacks 12.0. Consolidates multiple daily tasks and workflows into a single streamlined application.',
       tech: ['React', 'TypeScript', 'Vercel'],
       link: 'https://one-app-frontend.vercel.app',
       github: 'https://devpost.com/software/oneapp-oawqzl'
     },
     {
       name: 'Calyra',
-      description: 'AI-powered productivity and scheduling platform that automates workflows across calendars, CRM, and communication tools. Prioritizes tasks, supports wellness-aware planning, and integrates seamlessly for individuals and teams.',
+      description: 'AI-powered productivity and scheduling platform that automates workflows across calendars, CRM, and communication tools with wellness-aware planning.',
       tech: ['LangChain', 'Next.js', 'FastAPI'],
       link: null,
       github: null
     },
     {
       name: 'DrystAI',
-      description: 'Transforms smart glasses into a real-time memory assistant, recognizing faces, transcribing conversations, and overlaying contextual info to make networking smarter.',
+      description: 'Transforms smart glasses into a real-time memory assistant, recognizing faces, transcribing conversations, and overlaying contextual info for smarter networking.',
       tech: ['MongoDB Atlas', 'Vector Embedding', 'Next.js'],
       link: null,
       github: 'https://github.com/RadonUmar/drystai'
     },
     {
       name: 'MeDisha',
-      description: 'Revolutionizing Clinical Trial Access with Agentic AI.',
+      description: 'Revolutionizing clinical trial access with Agentic AI and Amazon Bedrock.',
       tech: ['Amazon Bedrock', 'Next.js'],
       link: null,
       github: 'https://github.com/hdadhich01/meddisha'
     },
     {
       name: 'StudentRoute',
-      description: 'Created a secure carpooling platform helping students connect with verified drivers for safe, consistent school travel.',
+      description: 'Secure carpooling platform helping students connect with verified drivers for safe, consistent school travel.',
       tech: ['React.js'],
       link: 'https://www.youtube.com/watch?v=SUQ_URS6NNI',
       github: null
     },
     {
       name: 'BoredTutors',
-      description: 'Peer tutoring platform for PUSD (React, Node, MySQL); tutor dashboard, verification system, pitched to schools, 250+ users.',
-      tech: ['React.js', 'AWS Lambda', 'MySQL', 'Product Development'],
+      description: 'Peer tutoring platform for PUSD with tutor dashboard, verification system. Pitched to schools with 250+ users.',
+      tech: ['React.js', 'AWS Lambda', 'MySQL'],
       link: 'https://www.boredtutors.com/',
       github: null
     },
     {
       name: 'kiruthirupathi.org',
-      description: 'Full-stack temple administration app for admins/priests—manages events, donations, finances, outreach. Raised ~$500,000 in donations.',
-      tech: ['React.js', 'Express.js', 'PostgreSQL', 'Full-Stack Development'],
+      description: 'Full-stack temple administration app managing events, donations, finances, and outreach. Raised ~$500,000 in donations.',
+      tech: ['React.js', 'Express.js', 'PostgreSQL'],
       link: 'http://kiruthirupathi.org/',
       github: null
     }
   ]
 
   return (
-    <section id="projects" className="py-24 px-4 sm:px-6 lg:px-8 bg-slate-800">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl font-bold text-white mb-16 text-center">
+    <section id="projects" className="py-32 px-6 lg:px-8 bg-black border-t border-neutral-900">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-sm tracking-widest uppercase text-neutral-500 mb-16">
           Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="space-y-0">
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="bg-slate-900 rounded-xl p-8 border border-slate-700 hover:border-indigo-500 transition-all duration-200 hover:shadow-xl hover:shadow-indigo-500/10 flex flex-col"
+              className="group border-t border-neutral-800 py-8 hover:border-neutral-600 transition-colors"
             >
-              <div className="flex-1">
-                <h3 className="text-2xl font-bold text-white mb-3">{project.name}</h3>
-                <p className="text-slate-300 mb-4 leading-relaxed">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tech.map((tech, techIdx) => (
-                    <span
-                      key={techIdx}
-                      className="px-3 py-1 bg-slate-800 text-indigo-400 rounded-lg text-sm border border-slate-700"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8">
+                <div className="md:col-span-4">
+                  <h3 className="text-xl font-medium text-white group-hover:text-neutral-300 transition-colors">
+                    {project.name}
+                  </h3>
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    {project.tech.map((tech, techIdx) => (
+                      <span
+                        key={techIdx}
+                        className="text-xs text-neutral-600 uppercase tracking-wider"
+                      >
+                        {tech}{techIdx < project.tech.length - 1 ? ' /' : ''}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-              <div className="flex gap-3 pt-4">
-                {project.github && (
-                  <Link
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition-colors text-sm"
-                  >
-                    <Github className="w-4 h-4" />
-                    Code
-                  </Link>
-                )}
-                {project.link && (
-                  <Link
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-500 transition-colors text-sm"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    View
-                  </Link>
-                )}
+                <div className="md:col-span-6">
+                  <p className="text-neutral-400 text-sm leading-relaxed">
+                    {project.description}
+                  </p>
+                </div>
+                <div className="md:col-span-2 flex md:justify-end items-start gap-3">
+                  {project.github && (
+                    <Link
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-neutral-600 hover:text-white transition-colors text-xs uppercase tracking-wider underline underline-offset-4"
+                    >
+                      Code
+                    </Link>
+                  )}
+                  {project.link && (
+                    <Link
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-neutral-600 hover:text-white transition-colors flex items-center gap-1"
+                    >
+                      <ArrowUpRight className="w-4 h-4" />
+                    </Link>
+                  )}
+                </div>
               </div>
             </div>
           ))}
+          <div className="border-t border-neutral-800" />
         </div>
       </div>
     </section>

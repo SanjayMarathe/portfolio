@@ -1,20 +1,21 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { JetBrains_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-jetbrains',
+})
 
 export const metadata: Metadata = {
   title: 'Sanjay Marathe',
-  description: 'Computer Science & Intelligent Systems student at UC Irvine, passionate about building scalable systems and intelligent agents.',
-  generator: 'v0.app',
-  keywords: ['Sanjay Marathe', 'Full-Stack Engineer', 'AI', 'Machine Learning', 'UC Irvine', 'Software Engineer'],
+  description: 'Computer Science & Intelligent Systems student at UC Irvine. Building scalable systems, intelligent agents, and high-impact products.',
+  keywords: ['Sanjay Marathe', 'Software Engineer', 'AI', 'Machine Learning', 'UC Irvine'],
   authors: [{ name: 'Sanjay Marathe' }],
   openGraph: {
     title: 'Sanjay Marathe',
-    description: 'Computer Science & Intelligent Systems student at UC Irvine, passionate about building scalable systems and intelligent agents.',
+    description: 'Computer Science & Intelligent Systems student at UC Irvine. Building scalable systems, intelligent agents, and high-impact products.',
     type: 'website',
   },
   icons: {
@@ -43,7 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark scroll-smooth">
-      <body className={`font-sans antialiased`}>
+      <body className={`${jetbrainsMono.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>
