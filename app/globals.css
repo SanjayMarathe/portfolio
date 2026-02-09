@@ -4,12 +4,12 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
-  --card: #000000;
-  --card-foreground: #ffffff;
-  --muted: #a3a3a3;
-  --border: #262626;
+  --background: #ffffff;
+  --foreground: #000000;
+  --card: #ffffff;
+  --card-foreground: #000000;
+  --muted: #737373;
+  --border: #e5e5e5;
   --radius: 0rem;
 }
 
@@ -37,10 +37,11 @@
     @apply outline-none;
   }
   body {
-    @apply bg-black text-white;
+    @apply bg-white text-black dark:bg-black dark:text-white;
     font-feature-settings: 'ss01' on, 'ss02' on, 'cv01' on;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   ::selection {
     background: #7C3AED;

@@ -97,27 +97,27 @@ export default function Projects() {
   ]
 
   return (
-    <section id="projects" className="py-32 px-6 lg:px-8 bg-black border-t border-neutral-900">
+    <section id="projects" className="py-32 px-6 lg:px-8 bg-white dark:bg-black border-t border-neutral-200 dark:border-neutral-900 transition-colors">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-sm tracking-widest uppercase text-neutral-500 mb-16">
+        <h2 className="text-sm tracking-widest uppercase text-neutral-400 dark:text-neutral-500 mb-16">
           Projects
         </h2>
         <div className="space-y-0">
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="group border-t border-neutral-800 py-8 hover:border-[#7C3AED]/40 transition-colors"
+              className="group border-t border-neutral-200 dark:border-neutral-800 py-8 hover:border-[#7C3AED]/40 transition-colors"
             >
               <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8">
                 <div className="md:col-span-4">
-                  <h3 className="text-xl font-medium text-white group-hover:text-[#7C3AED] transition-colors">
+                  <h3 className="text-xl font-medium text-black dark:text-white group-hover:text-[#7C3AED] transition-colors">
                     {project.name}
                   </h3>
                   <div className="flex flex-wrap gap-2 mt-3">
                     {project.tech.map((tech, techIdx) => (
                       <span
                         key={techIdx}
-                        className="text-xs text-neutral-600 uppercase tracking-wider"
+                        className="text-xs text-neutral-400 dark:text-neutral-600 uppercase tracking-wider"
                       >
                         {tech}{techIdx < project.tech.length - 1 ? ' /' : ''}
                       </span>
@@ -125,7 +125,7 @@ export default function Projects() {
                   </div>
                 </div>
                 <div className="md:col-span-6">
-                  <p className="text-neutral-400 text-sm leading-relaxed">
+                  <p className="text-neutral-500 dark:text-neutral-400 text-sm leading-relaxed">
                     {project.description}
                   </p>
                 </div>
@@ -135,7 +135,7 @@ export default function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-neutral-600 hover:text-[#7C3AED] transition-colors text-xs uppercase tracking-wider underline underline-offset-4"
+                      className="text-neutral-400 dark:text-neutral-600 hover:text-[#7C3AED] transition-colors text-xs uppercase tracking-wider underline underline-offset-4"
                     >
                       Code
                     </Link>
@@ -145,7 +145,7 @@ export default function Projects() {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-neutral-600 hover:text-[#7C3AED] transition-colors flex items-center gap-1"
+                      className="text-neutral-400 dark:text-neutral-600 hover:text-[#7C3AED] transition-colors flex items-center gap-1"
                     >
                       <ArrowUpRight className="w-4 h-4" />
                     </Link>
@@ -154,7 +154,7 @@ export default function Projects() {
               </div>
             </div>
           ))}
-          <div className="border-t border-neutral-800" />
+          <div className="border-t border-neutral-200 dark:border-neutral-800" />
         </div>
       </div>
     </section>
