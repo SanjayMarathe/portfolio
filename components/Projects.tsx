@@ -4,6 +4,13 @@ import Link from 'next/link'
 export default function Projects() {
   const projects = [
     {
+      name: 'VercelOS',
+      description: 'Voice-to-PR agent built in 5 hours at the Vercel x SDx hackathon at UC San Diego. Powered by LiveKit and Deepgram, it converts speech into production-ready code. Combines voice intent with v0 by Vercel and the Vercel AI SDK to transcribe feature requests, generate React components, and automatically open GitHub pull requests.',
+      tech: ['LiveKit', 'Deepgram', 'Vercel AI SDK', 'React'],
+      link: null,
+      github: 'https://lnkd.in/gZpMU3EM'
+    },
+    {
       name: 'ShieldNet',
       description: 'AI-powered fraud detection network for payments. Multi-agent invoice verification system that analyzes invoices before USDC transactions, detects fraud patterns, and shares threat intelligence across the network.',
       tech: ['React', 'TypeScript', 'Python'],
