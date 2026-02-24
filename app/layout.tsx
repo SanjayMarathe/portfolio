@@ -12,7 +12,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Sanjay Marathe',
   description: 'Computer Science & Intelligent Systems student at UC Irvine. Building scalable systems, intelligent agents, and high-impact products.',
-  keywords: ['Sanjay Marathe', 'Software Engineer', 'AI', 'Machine Learning', 'UC Irvine'],
+  keywords: ['Sanjay Marathe', 'Product Builder', 'AI', 'Machine Learning', 'UC Irvine'],
   authors: [{ name: 'Sanjay Marathe' }],
   openGraph: {
     title: 'Sanjay Marathe',

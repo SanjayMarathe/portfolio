@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="space-y-8 animate-fade-in">
           <div className="space-y-6">
             <p className="text-neutral-600 dark:text-neutral-500 text-sm tracking-widest uppercase animate-fade-in-up">
-              Software Engineer
+              Product Builder
             </p>
             <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold text-[#7C3AED] tracking-tight leading-[0.9] animate-fade-in-up-delay-1">
               Sanjay
