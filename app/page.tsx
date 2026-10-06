@@ -1,30 +1,60 @@
 import Image from 'next/image'
 
 type Project = { name: string; description: string; tech: string; code?: string; live?: string }
+type Experience = { role: string; organization: string; period: string; description?: string }
+
+const experience: Experience[] = [
+  { role: 'Software Engineer Intern', organization: 'Orthogonal (YC W26)', period: 'Jun–Sep 2026', description: 'Worked on agentic infrastructure.' },
+  { role: 'Software Engineer Intern', organization: 'Fetch.ai', period: 'Jun–Sep 2026', description: 'Worked in the Innovation Lab.' },
+  { role: 'Research Intern', organization: 'NASA', period: 'Mar–May 2026', description: 'Built machine learning models to approximate solar magnetic field distributions at the DRIVE Science Center.' },
+  { role: 'Software Engineer Intern', organization: 'Grangou', period: 'Jan–May 2026', description: 'Built a social dining app for Gen Z, available on the App Store.' },
+  { role: 'Software Engineer Intern', organization: 'Geodo', period: 'Dec 2025–Mar 2026', description: 'Built data pipelines for computer-use automation and vision-language models at an Entrepreneurs First-backed company.' },
+  { role: 'Founder', organization: 'HLS Solutions', period: 'Dec 2024–May 2025', description: 'Ran a web development consulting agency and exited at $10,000 ARR.' },
+  { role: 'Founder', organization: 'Web Development Workshop', period: 'Aug 2023–May 2025', description: 'Founded a web development workshop and taught more than 20 students.' },
+  { role: 'Software Engineer Intern', organization: 'Doozie Software Solutions', period: 'Jun–Aug 2024', description: 'Built organization administration software.' },
+  { role: 'Biomechanics Researcher', organization: 'University of Southern California', period: 'Jun 2023–Aug 2024' },
+  { role: 'Software Engineer Intern', organization: 'Doozie Software Solutions', period: 'Jun–Aug 2023', description: 'Worked on mobile apps.' },
+]
 
 const projects: Project[] = [
-  { name: 'VercelOS', description: 'A voice-to-PR agent built at the Vercel x SDx hackathon. It uses LiveKit, Deepgram, v0, and the Vercel AI SDK to turn spoken feature requests into React components and GitHub pull requests.', tech: 'LiveKit, Deepgram, Vercel AI SDK, React', code: 'https://lnkd.in/gZpMU3EM' },
-  { name: 'ShieldNet', description: 'AI-powered fraud detection for payments, with agents that verify invoices before USDC transactions and share threat intelligence.', tech: 'React, TypeScript, Python', code: 'https://github.com/Steve-Dusty/ShieldNet' },
-  { name: 'HealthXR', description: 'An extended reality healthcare app for Apple Vision Pro, featuring Gemini-powered health analysis and immersive visualizations.', tech: 'React, TypeScript, WebSpatial, Gemini AI', code: 'https://github.com/Steve-Dusty/healthxr', live: 'https://healthxr.vercel.app' },
-  { name: 'DermaVisionXR', description: 'A VR dermatoscopic analysis platform with camera scanning, AI-assisted diagnosis, and confidence visualization.', tech: 'TypeScript, Pinecone, WebXR, Three.js', code: 'https://github.com/SanjayMarathe/DermaVisionXR' },
-  { name: 'StructuraXR', description: 'A WebXR workspace for designing and testing structures with AI-generated models, CAD uploads, and stress visualization.', tech: 'Three.js, WebXR, TypeScript, Claude AI', code: 'https://github.com/SanjayMarathe/StructuraXR' },
-  { name: 'Nomad', description: 'A travel companion for discovering, planning, and booking accommodations and experiences.', tech: 'React, TypeScript, Node.js', code: 'https://github.com/SanjayMarathe/nomad' },
-  { name: 'OneApp', description: 'A unified daily productivity platform built at CalHacks 12.0 to bring common workflows into one place.', tech: 'React, TypeScript, Vercel', code: 'https://devpost.com/software/oneapp-oawqzl', live: 'https://one-app-frontend.vercel.app' },
-  { name: 'Calyra', description: 'An AI-powered scheduling platform that automates work across calendars, CRM, and communications.', tech: 'LangChain, Next.js, FastAPI' },
-  { name: 'DrystAI', description: 'A smart-glasses memory assistant that recognizes faces, transcribes conversations, and displays context in real time.', tech: 'MongoDB Atlas, vector embeddings, Next.js', code: 'https://github.com/RadonUmar/drystai' },
-  { name: 'MeDisha', description: 'An agentic AI project designed to improve access to clinical trials.', tech: 'Amazon Bedrock, Next.js', code: 'https://github.com/hdadhich01/meddisha' },
-  { name: 'StudentRoute', description: 'A secure carpooling platform connecting students with verified drivers for consistent school travel.', tech: 'React', live: 'https://www.youtube.com/watch?v=SUQ_URS6NNI' },
-  { name: 'BoredTutors', description: 'A peer-tutoring platform for PUSD with a tutor dashboard and verification system, pitched to schools with more than 250 users.', tech: 'React, AWS Lambda, MySQL', live: 'https://www.boredtutors.com/' },
-  { name: 'kiruthirupathi.org', description: 'A temple administration app for events, donations, finances, and outreach. The organization raised approximately $500,000 in donations.', tech: 'React, Express, PostgreSQL', live: 'http://kiruthirupathi.org/' },
+  { name: 'DrystAI', description: 'Smart glasses become a real-time memory assistant, recognizing faces, transcribing conversations, and showing helpful context as you meet people.', tech: 'MongoDB Atlas, vector embeddings, Next.js', code: 'https://github.com/RadonUmar/drystai' },
+  { name: 'MeDisha', description: 'An AWS Bedrock-powered assistant that matches patients to clinical trials, explains eligibility, and compares trial locations and costs.', tech: 'Amazon Bedrock, Next.js', code: 'https://github.com/hdadhich01/meddisha' },
+  { name: 'Kaimon', description: 'Point a camera at an item and let AI agents identify it, compare listings, and handle the purchase through a single checkout.', tech: 'TwelveLabs, Fetch.ai, Browser Use, Stripe', live: 'https://devpost.com/software/kaimon' },
 ]
+
+const hackathons = [
+  { event: 'AWS LA AI Hackathon', result: '1st place overall' },
+  { event: 'Google Gemini × Cerebral Valley at SHACK15', result: 'Finalist' },
+  { event: 'Anthropic × UCI', result: '3rd place overall' },
+  { event: 'Major League Hacking × DigitalOcean', result: 'Popular vote winner' },
+  { event: 'SB Hacks 12', result: '1st place, Best Use of Solana; 2nd place, Best Use of Deepgram' },
+  { event: 'DiamondHacks 2026', result: '1st place, Best Use of TwelveLabs; 2nd place, Best Use of Fetch.ai' },
+  { event: 'StanfordXR', result: 'Best Design & Storytelling' },
+]
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Sanjay Marathe',
+  url: 'https://www.sanjaymarathe.me/',
+  image: 'https://www.sanjaymarathe.me/profile.jpg',
+  description: 'Computer Science and Intelligent Systems student at UC Irvine building software and AI products.',
+  affiliation: { '@type': 'CollegeOrUniversity', name: 'University of California, Irvine' },
+  sameAs: [
+    'https://github.com/SanjayMarathe',
+    'https://www.linkedin.com/in/sanjay-marathe-2257811b0/',
+    'https://x.com/itsmesmarathe',
+  ],
+}
 
 export default function Home() {
   return (
     <div className="site-shell">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema).replace(/</g, '\\u003c') }} />
       <header className="site-nav">
         <a className="site-name" href="#top">Sanjay Marathe</a>
         <nav aria-label="Main navigation">
-          <a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+          <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#hackathons">Hackathons</a>
         </nav>
       </header>
       <main id="top">
@@ -37,6 +67,8 @@ export default function Home() {
               <a href="mailto:maraths1@uci.edu">maraths1@uci.edu</a><span aria-hidden="true">·</span>
               <a href="https://github.com/SanjayMarathe" target="_blank" rel="noopener noreferrer">github</a><span aria-hidden="true">·</span>
               <a href="https://www.linkedin.com/in/sanjay-marathe-2257811b0/" target="_blank" rel="noopener noreferrer">linkedin</a>
+              <span aria-hidden="true">·</span>
+              <a href="https://x.com/itsmesmarathe" target="_blank" rel="noopener noreferrer">x</a>
             </p>
           </div>
         </div>
@@ -44,8 +76,22 @@ export default function Home() {
           <h2>About</h2>
           <p>My work sits at the intersection of software engineering and AI. I&apos;ve built backend infrastructure, agentic systems, and interactive products, and I enjoy turning ambitious ideas into things people can use.</p>
         </section>
+        <section id="experience" className="content-section">
+          <h2>Experience</h2>
+          <ul className="experience-list">
+            {experience.map((item) => (
+              <li key={`${item.organization}-${item.period}`} className="experience-item">
+                <div className="experience-heading">
+                  <h3>{item.role}, <span>{item.organization}</span></h3>
+                  <span className="experience-period">{item.period}</span>
+                </div>
+                {item.description && <p>{item.description}</p>}
+              </li>
+            ))}
+          </ul>
+        </section>
         <section id="projects" className="content-section">
-          <h2>Projects</h2>
+          <h2>Highlighted Projects</h2>
           <ol className="project-list">
             {projects.map((project, index) => (
               <li key={project.name} className="project">
@@ -63,6 +109,19 @@ export default function Home() {
               </li>
             ))}
           </ol>
+        </section>
+        <section id="hackathons" className="content-section">
+          <h2>Hackathons</h2>
+          <p className="hackathon-summary">Awards and recognition across {hackathons.length} hackathons.</p>
+          <ul className="hackathon-list">
+            {hackathons.map((item) => (
+              <li key={item.event}><strong>{item.event}.</strong> {item.result}.</li>
+            ))}
+          </ul>
+        </section>
+        <section id="miscellaneous" className="content-section">
+          <h2>Miscellaneous</h2>
+          <p>Drums (6 years), high school varsity swim &amp; rugby. I think the discipline that compounds quietly is what makes the visible stuff possible.</p>
         </section>
         <section id="contact" className="content-section contact-section">
           <h2>Contact</h2>
