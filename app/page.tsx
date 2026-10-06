@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 type Project = { name: string; description: string; tech: string; code?: string; live?: string }
 
 const projects: Project[] = [
@@ -27,7 +29,7 @@ export default function Home() {
       </header>
       <main id="top">
         <div className="intro">
-          <div className="monogram" aria-hidden="true">SM</div>
+          <Image className="profile-photo" src="/profile.jpg" alt="Sanjay Marathe" width={120} height={120} priority />
           <div>
             <h1>Sanjay Marathe</h1>
             <p className="intro-copy">I&apos;m a Computer Science and Intelligent Systems student at UC Irvine. I build scalable systems, intelligent agents, and useful web products, with interests in full-stack development and artificial intelligence.</p>

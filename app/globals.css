@@ -18,7 +18,7 @@ a:focus-visible { outline: 2px solid #194db1; outline-offset: 3px; }
 .site-nav a:hover { color: #111; text-decoration: underline; }
 .site-nav .site-name { color: #202020; font-weight: 700; white-space: nowrap; }
 .intro { display: grid; grid-template-columns: 120px 1fr; gap: 32px; align-items: start; padding-top: 42px; }
-.monogram { display: grid; place-items: center; width: 120px; height: 120px; background: #f3f3f3; border: 1px solid #dedede; color: #888; font-size: 32px; }
+.profile-photo { display: block; width: 120px; height: 120px; border: 1px solid #dedede; object-fit: cover; }
 h1 { margin: -4px 0 13px; font-size: 31px; line-height: 1.2; letter-spacing: -0.04em; font-weight: 700; }
 .intro-copy { margin: 0; }
 .social-links { display: flex; flex-wrap: wrap; gap: 0 9px; margin: 13px 0 0; font-size: 14px; }
@@ -40,7 +40,7 @@ footer { padding: 64px 0 32px; color: #888; font-size: 13px; }
   .site-nav { align-items: flex-start; flex-direction: column; gap: 8px; padding-top: 20px; }
   .site-nav nav { gap: 16px; }
   .intro { grid-template-columns: 1fr; gap: 18px; padding-top: 32px; }
-  .monogram { width: 88px; height: 88px; font-size: 26px; }
+  .profile-photo { width: 88px; height: 88px; }
   h1 { font-size: 29px; }
   .content-section { margin-top: 44px; }
 }
