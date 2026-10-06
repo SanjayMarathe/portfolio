@@ -1,96 +1,46 @@
 @import 'tailwindcss';
-@import 'tw-animate-css';
 
-@custom-variant dark (&:is(.dark *));
+@font-face { font-family: 'Anonymous Pro'; src: url('/fonts/AnonymousPro-Regular.ttf') format('truetype'); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Anonymous Pro'; src: url('/fonts/AnonymousPro-Bold.ttf') format('truetype'); font-style: normal; font-weight: 700; font-display: swap; }
+@font-face { font-family: 'Anonymous Pro'; src: url('/fonts/AnonymousPro-Italic.ttf') format('truetype'); font-style: italic; font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Anonymous Pro'; src: url('/fonts/AnonymousPro-BoldItalic.ttf') format('truetype'); font-style: italic; font-weight: 700; font-display: swap; }
 
-:root {
-  --background: #ffffff;
-  --foreground: #000000;
-  --card: #ffffff;
-  --card-foreground: #000000;
-  --muted: #737373;
-  --border: #e5e5e5;
-  --radius: 0rem;
-}
-
-.dark {
-  --background: #000000;
-  --foreground: #ffffff;
-  --card: #000000;
-  --card-foreground: #ffffff;
-  --muted: #a3a3a3;
-  --border: #262626;
-}
-
-@theme inline {
-  --font-sans: 'JetBrains Mono', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --radius-lg: var(--radius);
-}
-
-@layer base {
-  * {
-    @apply outline-none;
-  }
-  body {
-    @apply bg-white text-black dark:bg-black dark:text-white;
-    font-feature-settings: 'ss01' on, 'ss02' on, 'cv01' on;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  ::selection {
-    background: #7C3AED;
-    color: #ffffff;
-  }
-}
-
-@layer utilities {
-  .animate-fade-in {
-    animation: fade-in 0.8s ease-out;
-  }
-
-  .animate-fade-in-up {
-    animation: fade-in-up 0.6s ease-out both;
-  }
-
-  .animate-fade-in-up-delay-1 {
-    animation: fade-in-up 0.6s ease-out 0.1s both;
-  }
-
-  .animate-fade-in-up-delay-2 {
-    animation: fade-in-up 0.6s ease-out 0.2s both;
-  }
-
-  .animate-fade-in-up-delay-3 {
-    animation: fade-in-up 0.6s ease-out 0.3s both;
-  }
-
-  .animate-fade-in-up-delay-4 {
-    animation: fade-in-up 0.6s ease-out 0.4s both;
-  }
-
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes fade-in-up {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+:root { color-scheme: light; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #fff; color: #202020; font-family: 'Anonymous Pro', 'Courier New', monospace; font-size: 17px; line-height: 1.55; }
+a { color: #194db1; text-decoration: underline; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid #194db1; outline-offset: 3px; }
+.site-shell { max-width: 768px; margin: 0 auto; padding: 0 24px; }
+.site-nav { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding: 27px 0 8px; font-size: 14px; }
+.site-nav nav { display: flex; flex-wrap: wrap; gap: 20px; }
+.site-nav a { color: #4b4b4b; text-decoration: none; }
+.site-nav a:hover { color: #111; text-decoration: underline; }
+.site-nav .site-name { color: #202020; font-weight: 700; white-space: nowrap; }
+.intro { display: grid; grid-template-columns: 120px 1fr; gap: 32px; align-items: start; padding-top: 42px; }
+.monogram { display: grid; place-items: center; width: 120px; height: 120px; background: #f3f3f3; border: 1px solid #dedede; color: #888; font-size: 32px; }
+h1 { margin: -4px 0 13px; font-size: 31px; line-height: 1.2; letter-spacing: -0.04em; font-weight: 700; }
+.intro-copy { margin: 0; }
+.social-links { display: flex; flex-wrap: wrap; gap: 0 9px; margin: 13px 0 0; font-size: 14px; }
+.social-links span { color: #888; }
+.content-section { margin-top: 54px; scroll-margin-top: 24px; }
+.content-section h2 { margin: 0 0 17px; padding-bottom: 4px; border-bottom: 1px solid #cfcfcf; font-size: 16px; line-height: 1.4; text-transform: uppercase; letter-spacing: 0.055em; font-weight: 700; }
+.content-section > p { margin: 0; }
+.project-list { list-style: none; margin: 0; padding: 0; }
+.project { display: grid; grid-template-columns: 30px 1fr; gap: 9px; margin: 0 0 24px; }
+.project-number { padding-top: 2px; color: #999; font-size: 14px; }
+.project h3 { display: inline; margin: 0; font-size: 17px; line-height: inherit; font-weight: 700; }
+.project p { margin: 4px 0 0; color: #424242; }
+.project .project-meta { color: #777; font-size: 14px; }
+.project .project-links { margin-top: 5px; font-size: 14px; }
+.contact-section { margin-top: 45px; }
+footer { padding: 64px 0 32px; color: #888; font-size: 13px; }
+@media (max-width: 580px) {
+  .site-shell { padding: 0 20px; }
+  .site-nav { align-items: flex-start; flex-direction: column; gap: 8px; padding-top: 20px; }
+  .site-nav nav { gap: 16px; }
+  .intro { grid-template-columns: 1fr; gap: 18px; padding-top: 32px; }
+  .monogram { width: 88px; height: 88px; font-size: 26px; }
+  h1 { font-size: 29px; }
+  .content-section { margin-top: 44px; }
 }
