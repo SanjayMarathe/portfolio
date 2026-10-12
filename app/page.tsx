@@ -121,7 +121,8 @@ export default function Home() {
         </section>
         <section id="miscellaneous" className="content-section">
           <h2>Miscellaneous</h2>
-          <p>Drums (6 years), high school varsity swim &amp; rugby. I think the discipline that compounds quietly is what makes the visible stuff possible.</p>
+          <p>Drums (6 years), high school varsity swim &amp; rugby. Bench: 230 lb, squat: 300 lb, deadlift: 335 lb.</p>
+          <p>i think burning out is a symptom revoked by the momentum of small wins.</p>
         </section>
         <section id="contact" className="content-section contact-section">
           <h2>Contact</h2>
